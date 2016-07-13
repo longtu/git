@@ -1,0 +1,12 @@
+Squash into single commit
+If you make several related commits to your local repository prior to wanting to submit for review, you should squash those commits into a single commit. If you've followed everything above, you can perform this action by doing:
+git rebase -i origin/master
+This will bring up your text editor with text like:
+pick 749a62a Added a file
+pick ec9295b Changed some code
+pick be33007 Fixed my bug in that file
+Change all but the first "pick" to "squash":
+pick 749a62a Added a file
+squash ec9295b Changed some code
+squash be33007 Fixed my bug in that file
+Save the file. Another file will open in your text editor which will allow you to edit the combined commit message. Be careful to only keep one of the Change-Id lines and have it be at bottom of the message after one empty line.
