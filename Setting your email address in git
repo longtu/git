@@ -1,0 +1,11 @@
+Setting your email address for every repository on your computer
+
+Open Terminal.
+
+Set your email address with the following command:
+
+git config --global user.email "your_email@example.com"
+Confirm that you have set your email address correctly with the following command.
+
+git config --global user.email
+your_email@example.com
